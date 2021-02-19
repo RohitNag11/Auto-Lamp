@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.31\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\Auto-Lamp.X.production.sym \
   --cmf=dist/default/production\Auto-Lamp.X.production.cmf -z -Q18F67K40 \
-  -oC:\Users\Rohit\AppData\Local\Temp\sk1g.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\Rohit\AppData\Local\Temp\s930.3 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Auto-Lamp.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=02E4h-0DE9h -pstack=STACK \
   -ACODE=00h-01FFFFh -ACONST=00h-01FFFFh -ASMALLCONST=0E00h-0EFFhx498 \
@@ -27,7 +27,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\Rohit\AppData\Local\Temp\sk1g.o \
+  C:\Users\Rohit\AppData\Local\Temp\s930.o \
   dist/default/production\Auto-Lamp.X.production.o 
 
 Object code version is 3.11
@@ -37,7 +37,7 @@ Machine type is 18F67K40
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Rohit\AppData\Local\Temp\sk1g.o
+C:\Users\Rohit\AppData\Local\Temp\s930.o
                 idloc                            200000   200000       10        0       5
                 config                           300000   300000        C        0       4
                 init                                 DA       DA        4        C       0

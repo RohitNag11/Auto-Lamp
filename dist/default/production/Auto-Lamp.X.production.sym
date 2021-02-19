@@ -762,7 +762,7 @@ text11 3BD2 3BD5 CODE 3BD2 0
 %locals
 dist/default/production\Auto-Lamp.X.production.o
 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f67k40.h
-C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+C:\Users\Rohit\AppData\Local\Temp\s930.s
 9640 33F4 0 CODE 0
 9642 33F4 0 CODE 0
 9645 33F4 0 CODE 0
@@ -1319,7 +1319,7 @@ comparator.c
 14 3B8E 0 CODE 0
 15 3B96 0 CODE 0
 16 3B98 0 CODE 0
-C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+C:\Users\Rohit\AppData\Local\Temp\s930.s
 17981 18 0 CODE 0
 interrupts.c
 32 18 0 CODE 0
@@ -1566,7 +1566,7 @@ C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul16.c
 39 3B58 0 CODE 0
 52 3B60 0 CODE 0
 53 3B68 0 CODE 0
-C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+C:\Users\Rohit\AppData\Local\Temp\s930.s
 21740 8 0 CODE 0
 interrupts.c
 50 8 0 CODE 0
