@@ -83,7 +83,7 @@ dataBANK0 BANK0 1 E3 E3 7 1
 dataBANK1 BANK1 1 18D 18D 10 1
 dataBANK2 BANK2 1 266 266 46 1
 config CONFIG 4 300000 300000 C 1
-$C:\Users\Rohit\AppData\Local\Temp\s930.o
+$C:\Users\Rohit\AppData\Local\Temp\sk1g.o
 idloc IDLOC 5 200000 200000 10 1
 init CODE 0 DA DA 4 1
 reset_vec CODE 0 0 0 4 1
@@ -148,7 +148,7 @@ MEDIUMCONST 10E00-1FFFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Auto-Lamp.X.production.o
-18 intcodelo CODE >17981:C:\Users\Rohit\AppData\Local\Temp\s930.s
+18 intcodelo CODE >17981:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
 18 intcodelo CODE >32:C:\Users\Rohit\OneDrive - Imperial College London\Documents\Important Documents\Imperial College\My Courses\ME3\ME3 ECM\Labs\Fun\Auto-Lamp.X\interrupts.c
 4E intcodelo CODE >34:C:\Users\Rohit\OneDrive - Imperial College London\Documents\Important Documents\Imperial College\My Courses\ME3\ME3 ECM\Labs\Fun\Auto-Lamp.X\interrupts.c
 5E intcodelo CODE >36:C:\Users\Rohit\OneDrive - Imperial College London\Documents\Important Documents\Imperial College\My Courses\ME3\ME3 ECM\Labs\Fun\Auto-Lamp.X\interrupts.c
@@ -157,7 +157,7 @@ $dist/default/production\Auto-Lamp.X.production.o
 88 intcodelo CODE >39:C:\Users\Rohit\OneDrive - Imperial College London\Documents\Important Documents\Imperial College\My Courses\ME3\ME3 ECM\Labs\Fun\Auto-Lamp.X\interrupts.c
 98 intcodelo CODE >40:C:\Users\Rohit\OneDrive - Imperial College London\Documents\Important Documents\Imperial College\My Courses\ME3\ME3 ECM\Labs\Fun\Auto-Lamp.X\interrupts.c
 A2 intcodelo CODE >43:C:\Users\Rohit\OneDrive - Imperial College London\Documents\Important Documents\Imperial College\My Courses\ME3\ME3 ECM\Labs\Fun\Auto-Lamp.X\interrupts.c
-8 intcode CODE >21740:C:\Users\Rohit\AppData\Local\Temp\s930.s
+8 intcode CODE >21740:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
 8 intcode CODE >50:C:\Users\Rohit\OneDrive - Imperial College London\Documents\Important Documents\Imperial College\My Courses\ME3\ME3 ECM\Labs\Fun\Auto-Lamp.X\interrupts.c
 3922 intcode_body CODE >50:C:\Users\Rohit\OneDrive - Imperial College London\Documents\Important Documents\Imperial College\My Courses\ME3\ME3 ECM\Labs\Fun\Auto-Lamp.X\interrupts.c
 3922 intcode_body CODE >52:C:\Users\Rohit\OneDrive - Imperial College London\Documents\Important Documents\Imperial College\My Courses\ME3\ME3 ECM\Labs\Fun\Auto-Lamp.X\interrupts.c
@@ -843,73 +843,73 @@ F8E text1 CODE >45:C:\Users\Rohit\OneDrive - Imperial College London\Documents\I
 22F0 text0 CODE >108:C:\Users\Rohit\OneDrive - Imperial College London\Documents\Important Documents\Imperial College\My Courses\ME3\ME3 ECM\Labs\Fun\Auto-Lamp.X\main.c
 22F6 text0 CODE >109:C:\Users\Rohit\OneDrive - Imperial College London\Documents\Important Documents\Imperial College\My Courses\ME3\ME3 ECM\Labs\Fun\Auto-Lamp.X\main.c
 2304 text0 CODE >110:C:\Users\Rohit\OneDrive - Imperial College London\Documents\Important Documents\Imperial College\My Courses\ME3\ME3 ECM\Labs\Fun\Auto-Lamp.X\main.c
-33F4 cinit CODE >9640:C:\Users\Rohit\AppData\Local\Temp\s930.s
-33F4 cinit CODE >9642:C:\Users\Rohit\AppData\Local\Temp\s930.s
-33F4 cinit CODE >9645:C:\Users\Rohit\AppData\Local\Temp\s930.s
-33F4 cinit CODE >9703:C:\Users\Rohit\AppData\Local\Temp\s930.s
-33F6 cinit CODE >9704:C:\Users\Rohit\AppData\Local\Temp\s930.s
-33F8 cinit CODE >9705:C:\Users\Rohit\AppData\Local\Temp\s930.s
-33FA cinit CODE >9706:C:\Users\Rohit\AppData\Local\Temp\s930.s
-33FC cinit CODE >9707:C:\Users\Rohit\AppData\Local\Temp\s930.s
-33FE cinit CODE >9708:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3400 cinit CODE >9709:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3404 cinit CODE >9710:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3408 cinit CODE >9711:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3408 cinit CODE >9712:C:\Users\Rohit\AppData\Local\Temp\s930.s
-340A cinit CODE >9713:C:\Users\Rohit\AppData\Local\Temp\s930.s
-340E cinit CODE >9714:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3410 cinit CODE >9715:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3412 cinit CODE >9716:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3414 cinit CODE >9720:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3416 cinit CODE >9721:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3418 cinit CODE >9722:C:\Users\Rohit\AppData\Local\Temp\s930.s
-341A cinit CODE >9723:C:\Users\Rohit\AppData\Local\Temp\s930.s
-341C cinit CODE >9724:C:\Users\Rohit\AppData\Local\Temp\s930.s
-341E cinit CODE >9725:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3420 cinit CODE >9726:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3424 cinit CODE >9727:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3428 cinit CODE >9728:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3428 cinit CODE >9729:C:\Users\Rohit\AppData\Local\Temp\s930.s
-342A cinit CODE >9730:C:\Users\Rohit\AppData\Local\Temp\s930.s
-342E cinit CODE >9731:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3430 cinit CODE >9732:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3432 cinit CODE >9733:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3434 cinit CODE >9737:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3436 cinit CODE >9738:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3438 cinit CODE >9739:C:\Users\Rohit\AppData\Local\Temp\s930.s
-343A cinit CODE >9740:C:\Users\Rohit\AppData\Local\Temp\s930.s
-343C cinit CODE >9741:C:\Users\Rohit\AppData\Local\Temp\s930.s
-343E cinit CODE >9742:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3440 cinit CODE >9743:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3444 cinit CODE >9744:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3448 cinit CODE >9745:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3448 cinit CODE >9746:C:\Users\Rohit\AppData\Local\Temp\s930.s
-344A cinit CODE >9747:C:\Users\Rohit\AppData\Local\Temp\s930.s
-344E cinit CODE >9748:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3450 cinit CODE >9749:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3452 cinit CODE >9750:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3454 cinit CODE >9754:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3458 cinit CODE >9755:C:\Users\Rohit\AppData\Local\Temp\s930.s
-345A cinit CODE >9756:C:\Users\Rohit\AppData\Local\Temp\s930.s
-345A cinit CODE >9757:C:\Users\Rohit\AppData\Local\Temp\s930.s
-345C cinit CODE >9758:C:\Users\Rohit\AppData\Local\Temp\s930.s
-345E cinit CODE >9759:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3460 cinit CODE >9762:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3462 cinit CODE >9763:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3464 cinit CODE >9764:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3466 cinit CODE >9765:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3468 cinit CODE >9766:C:\Users\Rohit\AppData\Local\Temp\s930.s
-346A cinit CODE >9769:C:\Users\Rohit\AppData\Local\Temp\s930.s
-346E cinit CODE >9770:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3470 cinit CODE >9771:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3470 cinit CODE >9772:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3472 cinit CODE >9773:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3474 cinit CODE >9774:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3476 cinit CODE >9780:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3476 cinit CODE >9782:C:\Users\Rohit\AppData\Local\Temp\s930.s
-3478 cinit CODE >9783:C:\Users\Rohit\AppData\Local\Temp\s930.s
-347A cinit CODE >9784:C:\Users\Rohit\AppData\Local\Temp\s930.s
-347C cinit CODE >9785:C:\Users\Rohit\AppData\Local\Temp\s930.s
+33F4 cinit CODE >9640:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+33F4 cinit CODE >9642:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+33F4 cinit CODE >9645:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+33F4 cinit CODE >9703:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+33F6 cinit CODE >9704:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+33F8 cinit CODE >9705:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+33FA cinit CODE >9706:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+33FC cinit CODE >9707:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+33FE cinit CODE >9708:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3400 cinit CODE >9709:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3404 cinit CODE >9710:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3408 cinit CODE >9711:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3408 cinit CODE >9712:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+340A cinit CODE >9713:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+340E cinit CODE >9714:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3410 cinit CODE >9715:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3412 cinit CODE >9716:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3414 cinit CODE >9720:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3416 cinit CODE >9721:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3418 cinit CODE >9722:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+341A cinit CODE >9723:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+341C cinit CODE >9724:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+341E cinit CODE >9725:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3420 cinit CODE >9726:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3424 cinit CODE >9727:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3428 cinit CODE >9728:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3428 cinit CODE >9729:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+342A cinit CODE >9730:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+342E cinit CODE >9731:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3430 cinit CODE >9732:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3432 cinit CODE >9733:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3434 cinit CODE >9737:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3436 cinit CODE >9738:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3438 cinit CODE >9739:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+343A cinit CODE >9740:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+343C cinit CODE >9741:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+343E cinit CODE >9742:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3440 cinit CODE >9743:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3444 cinit CODE >9744:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3448 cinit CODE >9745:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3448 cinit CODE >9746:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+344A cinit CODE >9747:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+344E cinit CODE >9748:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3450 cinit CODE >9749:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3452 cinit CODE >9750:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3454 cinit CODE >9754:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3458 cinit CODE >9755:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+345A cinit CODE >9756:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+345A cinit CODE >9757:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+345C cinit CODE >9758:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+345E cinit CODE >9759:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3460 cinit CODE >9762:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3462 cinit CODE >9763:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3464 cinit CODE >9764:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3466 cinit CODE >9765:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3468 cinit CODE >9766:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+346A cinit CODE >9769:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+346E cinit CODE >9770:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3470 cinit CODE >9771:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3470 cinit CODE >9772:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3472 cinit CODE >9773:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3474 cinit CODE >9774:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3476 cinit CODE >9780:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3476 cinit CODE >9782:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+3478 cinit CODE >9783:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+347A cinit CODE >9784:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
+347C cinit CODE >9785:C:\Users\Rohit\AppData\Local\Temp\sk1g.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -944,7 +944,7 @@ i1_putch 3BD4 0 CODE 0 text43 dist/default/production\Auto-Lamp.X.production.o
 stoa@F1141 E3 0 BANK0 1 dataBANK0 dist/default/production\Auto-Lamp.X.production.o
 ?i1_isspace 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Auto-Lamp.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Rohit\AppData\Local\Temp\s930.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Rohit\AppData\Local\Temp\sk1g.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Auto-Lamp.X.production.o
 i1atoi@n 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
 i1atoi@s 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
@@ -955,7 +955,7 @@ __end_of_LdrISR DA 0 CODE 0 intcodelo dist/default/production\Auto-Lamp.X.produc
 i1stoa@nuls F 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
 ?_vfprintf CC 0 BANK0 1 cstackBANK0 dist/default/production\Auto-Lamp.X.production.o
 __Lsmallconst E00 0 SMALLCONST 0 smallconst dist/default/production\Auto-Lamp.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\Rohit\AppData\Local\Temp\s930.o
+___sp 0 0 STACK 2 stack C:\Users\Rohit\AppData\Local\Temp\sk1g.o
 _atoi 2318 0 CODE 0 text15 dist/default/production\Auto-Lamp.X.production.o
 _dbuf 2C4 0 BANK2 1 bssBANK2 dist/default/production\Auto-Lamp.X.production.o
 _dtoa 1B94 0 CODE 0 text6 dist/default/production\Auto-Lamp.X.production.o
@@ -978,7 +978,7 @@ i1dtoa@n 36 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.producti
 i1dtoa@p 30 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
 i1dtoa@s 34 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
 i1dtoa@w 32 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
-start DA 0 CODE 0 init C:\Users\Rohit\AppData\Local\Temp\s930.o
+start DA 0 CODE 0 init C:\Users\Rohit\AppData\Local\Temp\sk1g.o
 ___aomod@counter 85 0 BANK0 1 cstackBANK0 dist/default/production\Auto-Lamp.X.production.o
 i1pad@i 18 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
 i1pad@p 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
@@ -1021,12 +1021,12 @@ ttemp7 66 0 COMRAM 1 temp dist/default/production\Auto-Lamp.X.production.o
 __size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\Auto-Lamp.X.production.o
 i1___aomod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
 _LEDarray_init 3B1E 0 CODE 0 text22 dist/default/production\Auto-Lamp.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\Rohit\AppData\Local\Temp\s930.o
+__accesstop 60 0 ABS 0 - C:\Users\Rohit\AppData\Local\Temp\sk1g.o
 __end_of_LCD_Init 33F4 0 CODE 0 text26 dist/default/production\Auto-Lamp.X.production.o
-intlevel0 0 0 CODE 0 text C:\Users\Rohit\AppData\Local\Temp\s930.o
-intlevel1 0 0 CODE 0 text C:\Users\Rohit\AppData\Local\Temp\s930.o
-intlevel2 0 0 CODE 0 text C:\Users\Rohit\AppData\Local\Temp\s930.o
-intlevel3 0 0 CODE 0 text C:\Users\Rohit\AppData\Local\Temp\s930.o
+intlevel0 0 0 CODE 0 text C:\Users\Rohit\AppData\Local\Temp\sk1g.o
+intlevel1 0 0 CODE 0 text C:\Users\Rohit\AppData\Local\Temp\sk1g.o
+intlevel2 0 0 CODE 0 text C:\Users\Rohit\AppData\Local\Temp\sk1g.o
+intlevel3 0 0 CODE 0 text C:\Users\Rohit\AppData\Local\Temp\sk1g.o
 __end_of_DAC_init 3B9A 0 CODE 0 text32 dist/default/production\Auto-Lamp.X.production.o
 _seconds_check 19D 0 BANK1 1 bssBANK1 dist/default/production\Auto-Lamp.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Auto-Lamp.X.production.o
@@ -1051,8 +1051,8 @@ i1stoa@l 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.producti
 i1stoa@p 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
 i1stoa@s C 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
 i1stoa@w 18 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\Rohit\AppData\Local\Temp\s930.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\Rohit\AppData\Local\Temp\s930.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Rohit\AppData\Local\Temp\sk1g.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Rohit\AppData\Local\Temp\sk1g.o
 time_now@datebuf 118 0 BANK1 1 cstackBANK1 dist/default/production\Auto-Lamp.X.production.o
 time_now@daylist 12A 0 BANK1 1 cstackBANK1 dist/default/production\Auto-Lamp.X.production.o
 i1vfprintf@ap 5C 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
@@ -1183,7 +1183,7 @@ __Hbank12 0 0 ABS 0 bank12 dist/default/production\Auto-Lamp.X.production.o
 __Hbank13 0 0 ABS 0 bank13 dist/default/production\Auto-Lamp.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Auto-Lamp.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\Auto-Lamp.X.production.o
-__smallconst E00 0 SMALLCONST 0 smallconst C:\Users\Rohit\AppData\Local\Temp\s930.o
+__smallconst E00 0 SMALLCONST 0 smallconst C:\Users\Rohit\AppData\Local\Temp\sk1g.o
 main@F14549 18D 0 BANK1 1 dataBANK1 dist/default/production\Auto-Lamp.X.production.o
 __end_of_sprintf 36E8 0 CODE 0 text2 dist/default/production\Auto-Lamp.X.production.o
 __end_ofi1_isdigit 3A42 0 CODE 0 text49 dist/default/production\Auto-Lamp.X.production.o
@@ -1442,8 +1442,8 @@ i1fputs@s A 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.producti
 ?i1_stoa A 0 COMRAM 1 cstackCOMRAM dist/default/production\Auto-Lamp.X.production.o
 _time_now$2116 170 0 BANK1 1 cstackBANK1 dist/default/production\Auto-Lamp.X.production.o
 __size_of_vfprintf 0 0 ABS 0 - dist/default/production\Auto-Lamp.X.production.o
-stackhi DE9 0 ABS 0 - C:\Users\Rohit\AppData\Local\Temp\s930.o
-stacklo 2E4 0 ABS 0 - C:\Users\Rohit\AppData\Local\Temp\s930.o
+stackhi DE9 0 ABS 0 - C:\Users\Rohit\AppData\Local\Temp\sk1g.o
+stacklo 2E4 0 ABS 0 - C:\Users\Rohit\AppData\Local\Temp\sk1g.o
 stoa@cp 8E 0 BANK0 1 cstackBANK0 dist/default/production\Auto-Lamp.X.production.o
 stoa@fp 7E 0 BANK0 1 cstackBANK0 dist/default/production\Auto-Lamp.X.production.o
 __Lintcode 8 0 CODE 0 intcode dist/default/production\Auto-Lamp.X.production.o
@@ -1554,7 +1554,7 @@ __Ltext48 0 0 ABS 0 text48 dist/default/production\Auto-Lamp.X.production.o
 __Ltext49 0 0 ABS 0 text49 dist/default/production\Auto-Lamp.X.production.o
 __Ltext50 0 0 ABS 0 text50 dist/default/production\Auto-Lamp.X.production.o
 LCD_setline@line 78 0 BANK0 1 cstackBANK0 dist/default/production\Auto-Lamp.X.production.o
-__ramtop E00 0 RAM 0 ramtop C:\Users\Rohit\AppData\Local\Temp\s930.o
+__ramtop E00 0 RAM 0 ramtop C:\Users\Rohit\AppData\Local\Temp\sk1g.o
 _sprintf 3694 0 CODE 0 text2 dist/default/production\Auto-Lamp.X.production.o
 _vfprintf 3562 0 CODE 0 text3 dist/default/production\Auto-Lamp.X.production.o
 __Lpowerup DA 0 CODE 0 powerup dist/default/production\Auto-Lamp.X.production.o
