@@ -19,10 +19,11 @@ unsigned int seconds_counter;  /*define global variable seconds to be
  *         2. Stores the time as a string in hh:mm:ss format
  *         3. Stores the date as a string in day dd,mm,yyyy format
  */
-unsigned int time_now(char *timebuf, char *datebuf, unsigned int *seconds, unsigned int *minutes, unsigned int *hours, 
-                      unsigned int *weekdays,unsigned int *days, 
-                      unsigned int *months, unsigned int *years,
-                      unsigned int *season)
+unsigned int time_now(char *timebuf, char *datebuf, 
+                        unsigned int *seconds, unsigned int *minutes, 
+                        unsigned int *hours, unsigned int *weekdays,
+                        unsigned int *days, unsigned int *months, 
+                        unsigned int *years, unsigned int *season)
 {
     
     bool leap = !(*years % 4);  //variable leap is 1 on leap years and 0 others
