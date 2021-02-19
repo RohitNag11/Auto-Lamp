@@ -18,17 +18,7 @@ extern unsigned int (seconds_counter); /*GLOBAL VARIABLE
                                         *communicate with other files to
                                          locate seconds variable*/
 
-unsigned int time_now(unsigned int *seconds, unsigned int *minutes, unsigned int *hours, 
-                      unsigned int *weekdays,unsigned int *days, 
-                      unsigned int *months, unsigned int *years,
-                      unsigned int *season);
-
-void time_now_display(char *timebuf, unsigned int *seconds, unsigned int *minutes, unsigned int *hours, 
-                      unsigned int *weekdays,unsigned int *days, 
-                      unsigned int *months, unsigned int *years,
-                      unsigned int *season);
-
-void date_now_display(char *datebuf, unsigned int *seconds, unsigned int *minutes, unsigned int *hours, 
+unsigned int time_now(char *timebuf, char *datebuf, unsigned int *seconds, unsigned int *minutes, unsigned int *hours, 
                       unsigned int *weekdays,unsigned int *days, 
                       unsigned int *months, unsigned int *years,
                       unsigned int *season);

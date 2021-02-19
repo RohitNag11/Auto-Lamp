@@ -89,7 +89,7 @@ void main(void) {
             }
             
             //find the current hour in real-time:
-            unsigned int hour_now = time_now(&seconds_counter, &start_time[1], &start_time[2], 
+            unsigned int hour_now = time_now(timebuf, datebuf, &seconds_counter, &start_time[1], &start_time[2], 
                                        &start_time[3], &start_time[4], 
                                        &start_time[5], &start_time[6],
                                        &start_time[7]);
@@ -102,19 +102,6 @@ void main(void) {
             prev_sec = seconds_counter; //copy seconds_counter before it changes
             prev_sun = sun; //copy sun state before it changes
             
-//            Time2String(buf, hour_now); //store string version of ADC value in buf
-//            LCD_sendstring(buf); //display buf on LCD
-//            LCD_sendbyte(0b00000010, 0);
-            
-            time_now_display(timebuf, &seconds_counter, &start_time[1], &start_time[2], 
-                                       &start_time[3], &start_time[4], 
-                                       &start_time[5], &start_time[6],
-                                       &start_time[7]); //store string version of ADC value in buf
-            
-            date_now_display(datebuf, &seconds_counter, &start_time[1], &start_time[2], 
-                                       &start_time[3], &start_time[4], 
-                                       &start_time[5], &start_time[6],
-                                       &start_time[7]); //store string version of ADC value in buf
             
             LCD_setline(1);
             LCD_sendstring(timebuf); //display buf on LCD
