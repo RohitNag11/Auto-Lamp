@@ -24345,10 +24345,11 @@ extern unsigned int (seconds_counter);
 
 
 
-unsigned int time_now(char *timebuf, char *datebuf, unsigned int *seconds, unsigned int *minutes, unsigned int *hours,
-                      unsigned int *weekdays,unsigned int *days,
-                      unsigned int *months, unsigned int *years,
-                      unsigned int *season);
+unsigned int time_now(char *timebuf, char *datebuf,
+                        unsigned int *seconds, unsigned int *minutes,
+                        unsigned int *hours, unsigned int *weekdays,
+                        unsigned int *days, unsigned int *months,
+                        unsigned int *years, unsigned int *season);
 # 4 "interrupts.c" 2
 
 # 1 "./RunMode.h" 1
@@ -24406,8 +24407,8 @@ void __attribute__((picinterrupt(("high_priority")))) TimerISR()
         PIR0bits.TMR0IF = 0;
         seconds_counter += (1);
 
-        TMR0H = (0b11101110);
-        TMR0L = (0b10100100);
+        TMR0H = (0b00001011);
+        TMR0L = (0b11011100);
         if (sun){
             seconds_check += (1);
         }

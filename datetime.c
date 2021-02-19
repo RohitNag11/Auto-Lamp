@@ -75,9 +75,9 @@ unsigned int time_now(char *timebuf, char *datebuf,
                                                    *as a string in buf*/
     
     //integer output (select one):
-//    return (*seconds); //return current second
+    return (*seconds); //return current second
 //    return (*minutes); //return current minute
-    return (*hours); //return current hour
+//    return (*hours); //return current hour
 //    return (*days); //return current day
 //    return (*months); //return current month
 //    return (*years); //return current year

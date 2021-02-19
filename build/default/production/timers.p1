@@ -2032,17 +2032,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;timers.c: 11:     T0CON1bits.T0ASYNC=1;
 [e = . . _T0CON1bits 0 1 -> -> 1 `i `uc ]
 "13
-[; ;timers.c: 13:     T0CON1bits.T0CKPS = (0b0000);
-[e = . . _T0CON1bits 0 0 -> -> 0 `i `uc ]
+[; ;timers.c: 13:     T0CON1bits.T0CKPS = (0b1000);
+[e = . . _T0CON1bits 0 0 -> -> 8 `i `uc ]
 "14
 [; ;timers.c: 14:     T0CON0bits.T016BIT=1;
 [e = . . _T0CON0bits 0 1 -> -> 1 `i `uc ]
 "17
-[; ;timers.c: 17:     TMR0H = (0b11101110);
-[e = _TMR0H -> -> 238 `i `uc ]
+[; ;timers.c: 17:     TMR0H = (0b00001011);
+[e = _TMR0H -> -> 11 `i `uc ]
 "18
-[; ;timers.c: 18:     TMR0L = (0b10100100);
-[e = _TMR0L -> -> 164 `i `uc ]
+[; ;timers.c: 18:     TMR0L = (0b11011100);
+[e = _TMR0L -> -> 220 `i `uc ]
 "20
 [; ;timers.c: 20:     T0CON0bits.T0EN=1;
 [e = . . _T0CON0bits 0 4 -> -> 1 `i `uc ]

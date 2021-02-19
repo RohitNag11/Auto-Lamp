@@ -24339,10 +24339,11 @@ extern unsigned int (seconds_counter);
 
 
 
-unsigned int time_now(char *timebuf, char *datebuf, unsigned int *seconds, unsigned int *minutes, unsigned int *hours,
-                      unsigned int *weekdays,unsigned int *days,
-                      unsigned int *months, unsigned int *years,
-                      unsigned int *season);
+unsigned int time_now(char *timebuf, char *datebuf,
+                        unsigned int *seconds, unsigned int *minutes,
+                        unsigned int *hours, unsigned int *weekdays,
+                        unsigned int *days, unsigned int *months,
+                        unsigned int *years, unsigned int *season);
 # 2 "datetime.c" 2
 
 # 1 "./timers.h" 1
@@ -24365,10 +24366,11 @@ unsigned int seconds_check;
 
 unsigned int seconds_counter;
 # 22 "datetime.c"
-unsigned int time_now(char *timebuf, char *datebuf, unsigned int *seconds, unsigned int *minutes, unsigned int *hours,
-                      unsigned int *weekdays,unsigned int *days,
-                      unsigned int *months, unsigned int *years,
-                      unsigned int *season)
+unsigned int time_now(char *timebuf, char *datebuf,
+                        unsigned int *seconds, unsigned int *minutes,
+                        unsigned int *hours, unsigned int *weekdays,
+                        unsigned int *days, unsigned int *months,
+                        unsigned int *years, unsigned int *season)
 {
 
     _Bool leap = !(*years % 4);
@@ -24420,9 +24422,9 @@ unsigned int time_now(char *timebuf, char *datebuf, unsigned int *seconds, unsig
 
 
 
+    return (*seconds);
 
 
-    return (*hours);
 
 
 

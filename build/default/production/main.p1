@@ -37,6 +37,32 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12319
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f67k40.h: 12319: extern volatile ANSELFbits_t ANSELFbits __attribute__((address(0xEB4)));
 [v _ANSELFbits `VS567 ~T0 @X0 0 e@3764 ]
+"29751
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f67k40.h: 29751:     struct {
+[s S1383 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1383 . TRISD0 TRISD1 TRISD2 TRISD3 TRISD4 TRISD5 TRISD6 TRISD7 ]
+"29750
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f67k40.h: 29750: typedef union {
+[u S1382 `S1383 1 ]
+[n S1382 . . ]
+"29762
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f67k40.h: 29762: extern volatile TRISDbits_t TRISDbits __attribute__((address(0xF84)));
+[v _TRISDbits `VS1382 ~T0 @X0 0 e@3972 ]
+"28855
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f67k40.h: 28855:     struct {
+[s S1352 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1352 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
+"28865
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f67k40.h: 28865:     struct {
+[s S1353 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1353 . LD0 LD1 LD2 LD3 LD4 LD5 LD6 LD7 ]
+"28854
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f67k40.h: 28854: typedef union {
+[u S1351 `S1352 1 `S1353 1 ]
+[n S1351 . . . ]
+"28876
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f67k40.h: 28876: extern volatile LATDbits_t LATDbits __attribute__((address(0xF7C)));
+[v _LATDbits `VS1351 ~T0 @X0 0 e@3964 ]
 "30109
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f67k40.h: 30109:     struct {
 [s S1395 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -85,12 +111,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "17
 [; ;./datetime.h: 17: extern unsigned int (seconds_counter);
 [v _seconds_counter `ui ~T0 @X0 0 e ]
+"21
+[; ;./datetime.h: 21: unsigned int time_now(char *timebuf, char *datebuf,
+[v _time_now `(ui ~T0 @X0 0 ef10`*uc`*uc`*ui`*ui`*ui`*ui`*ui`*ui`*ui`*ui ]
 "15
 [; ;./datetime.h: 15: extern unsigned int (seconds_check);
 [v _seconds_check `ui ~T0 @X0 0 e ]
-"21
-[; ;./datetime.h: 21: unsigned int time_now(char *timebuf, char *datebuf, unsigned int *seconds, unsigned int *minutes, unsigned int *hours,
-[v _time_now `(ui ~T0 @X0 0 ef10`*uc`*uc`*ui`*ui`*ui`*ui`*ui`*ui`*ui`*ui ]
 "10 ./LEDarray.h
 [; ;./LEDarray.h: 10: void LEDarray_disp_bin(unsigned int number);
 [v _LEDarray_disp_bin `(v ~T0 @X0 0 ef1`ui ]
@@ -105,11 +131,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _LCD_sendbyte `(v ~T0 @X0 0 ef2`uc`uc ]
 "2 main.c
 [; ;main.c: 2: 
-[p x FEXTOSC  =  HS      ]
+[p x FEXTOSC  =  HS          ]
 "6
 [p x RSTOSC  =  EXTOSC_4PLL  ]
 "11
-[p x WDTE  =  OFF  ]
+[p x WDTE  =  OFF    ]
 "54 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f67k40.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f67k40.h: 54: __asm("PPSLOCK equ 0DEFh");
 [; <" PPSLOCK equ 0DEFh ;# ">
@@ -2112,20 +2138,30 @@ Version 4.0 HI-TECH Software Intermediate Code
 "35
 [; ;main.c: 35:     ANSELFbits.ANSELF7=1;
 [e = . . _ANSELFbits 0 7 -> -> 1 `i `uc ]
-"40
-[; ;main.c: 40:     TRISHbits.TRISH3 = 0;
+"38
+[; ;main.c: 38:     TRISDbits.TRISD7 = 0;
+[e = . . _TRISDbits 0 7 -> -> 0 `i `uc ]
+"39
+[; ;main.c: 39:     LATDbits.LATD7 = 1;
+[e = . . _LATDbits 0 7 -> -> 1 `i `uc ]
+"42
+[; ;main.c: 42:     TRISHbits.TRISH3 = 0;
 [e = . . _TRISHbits 0 3 -> -> 0 `i `uc ]
-"41
-[; ;main.c: 41:     LATHbits.LATH3 = 1;
+"43
+[; ;main.c: 43:     LATHbits.LATH3 = 1;
 [e = . . _LATHbits 0 3 -> -> 1 `i `uc ]
-"49
-[; ;main.c: 49:     sun = 1;
-[e = _sun -> -> 1 `i `a ]
-[v F14549 `ui ~T0 @X0 -> 8 `i s ]
-[i F14549
+"51
+[; ;main.c: 51:     sun = 0;
+[e = _sun -> -> 0 `i `a ]
+"53
+[; ;main.c: 53:     _Bool prev_sun = sun;
+[v _prev_sun `a ~T0 @X0 1 a ]
+[e = _prev_sun _sun ]
+[v F14550 `ui ~T0 @X0 -> 8 `i s ]
+[i F14550
 :U ..
-"68
-[; ;main.c: 68:     unsigned int start_time[] = {0, 0, 0, 0, 0, 0, 2021, 0};
+"72
+[; ;main.c: 72:     unsigned int start_time[] = {0, 0, 0, 0, 0, 0, 2021, 0};
 -> -> 0 `i `ui
 -> -> 0 `i `ui
 -> -> 0 `i `ui
@@ -2137,97 +2173,96 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ]
 [v _start_time `ui ~T0 @X0 -> 8 `i a ]
-[e = _start_time F14549 ]
-"70
-[; ;main.c: 70:     seconds_counter = start_time[0];
+[e = _start_time F14550 ]
+"74
+[; ;main.c: 74:     seconds_counter = start_time[0];
 [e = _seconds_counter *U + &U _start_time * -> -> -> 0 `i `ui `ux -> -> # *U &U _start_time `ui `ux ]
-"73
-[; ;main.c: 73:     unsigned int prev_sec = 0;
+"76
+[; ;main.c: 76:     unsigned int prev_sec = 0;
 [v _prev_sec `ui ~T0 @X0 1 a ]
 [e = _prev_sec -> -> 0 `i `ui ]
-"75
-[; ;main.c: 75:     _Bool prev_sun = sun;
-[v _prev_sun `a ~T0 @X0 1 a ]
-[e = _prev_sun _sun ]
-"77
-[; ;main.c: 77:     char timebuf[40];
-[v _timebuf `uc ~T0 @X0 -> 40 `i a ]
-"78
-[; ;main.c: 78:     char datebuf[40];
-[v _datebuf `uc ~T0 @X0 -> 40 `i a ]
 "79
-[; ;main.c: 79:     while (1)
-[e :U 2023 ]
+[; ;main.c: 79:     char timebuf[40];
+[v _timebuf `uc ~T0 @X0 -> 40 `i a ]
 "80
-[; ;main.c: 80:     {
-{
-"81
-[; ;main.c: 81:         if (seconds_counter != prev_sec)
-[e $ ! != _seconds_counter _prev_sec 2025  ]
+[; ;main.c: 80:     char datebuf[40];
+[v _datebuf `uc ~T0 @X0 -> 40 `i a ]
 "82
-[; ;main.c: 82:         {
+[; ;main.c: 82:     while (1)
+[e :U 2023 ]
+"83
+[; ;main.c: 83:     {
 {
 "84
-[; ;main.c: 84:             if ((sun != prev_sun) && (!sun))
-[e $ ! && != -> _sun `i -> _prev_sun `i ! != -> _sun `i -> 0 `i 2026  ]
+[; ;main.c: 84:         if (seconds_counter != prev_sec)
+[e $ ! != _seconds_counter _prev_sec 2025  ]
 "85
-[; ;main.c: 85:             {
+[; ;main.c: 85:         {
 {
-"86
-[; ;main.c: 86:                 start_time[1] = 0;
-[e = *U + &U _start_time * -> -> -> 1 `i `ui `ux -> -> # *U &U _start_time `ui `ux -> -> 0 `i `ui ]
 "87
-[; ;main.c: 87:                 start_time[2] = 12;
+[; ;main.c: 87:             unsigned int time = time_now(timebuf, datebuf,
+[v _time `ui ~T0 @X0 1 a ]
+[e = _time ( _time_now (4 , , , , , , , , , &U _timebuf &U _datebuf &U _seconds_counter &U *U + &U _start_time * -> -> -> 1 `i `ui `ux -> -> # *U &U _start_time `ui `ux &U *U + &U _start_time * -> -> -> 2 `i `ui `ux -> -> # *U &U _start_time `ui `ux &U *U + &U _start_time * -> -> -> 3 `i `ui `ux -> -> # *U &U _start_time `ui `ux &U *U + &U _start_time * -> -> -> 4 `i `ui `ux -> -> # *U &U _start_time `ui `ux &U *U + &U _start_time * -> -> -> 5 `i `ui `ux -> -> # *U &U _start_time `ui `ux &U *U + &U _start_time * -> -> -> 6 `i `ui `ux -> -> # *U &U _start_time `ui `ux &U *U + &U _start_time * -> -> -> 7 `i `ui `ux -> -> # *U &U _start_time `ui `ux ]
+"94
+[; ;main.c: 94:             if ((sun != prev_sun) && (!sun))
+[e $ ! && != -> _sun `i -> _prev_sun `i ! != -> _sun `i -> 0 `i 2026  ]
+"95
+[; ;main.c: 95:             {
+{
+"96
+[; ;main.c: 96:                 start_time[1] = 0;
+[e = *U + &U _start_time * -> -> -> 1 `i `ui `ux -> -> # *U &U _start_time `ui `ux -> -> 0 `i `ui ]
+"97
+[; ;main.c: 97:                 start_time[2] = 12;
 [e = *U + &U _start_time * -> -> -> 2 `i `ui `ux -> -> # *U &U _start_time `ui `ux -> -> 12 `i `ui ]
-"88
-[; ;main.c: 88:                 seconds_counter = seconds_check/2;
+"98
+[; ;main.c: 98:                 seconds_counter = seconds_check/2;
 [e = _seconds_counter / _seconds_check -> -> 2 `i `ui ]
-"89
-[; ;main.c: 89:             }
+"100
+[; ;main.c: 100:             }
 }
 [e :U 2026 ]
-"92
-[; ;main.c: 92:             unsigned int hour_now = time_now(timebuf, datebuf, &seconds_counter, &start_time[1], &start_time[2],
-[v _hour_now `ui ~T0 @X0 1 a ]
-[e = _hour_now ( _time_now (4 , , , , , , , , , &U _timebuf &U _datebuf &U _seconds_counter &U *U + &U _start_time * -> -> -> 1 `i `ui `ux -> -> # *U &U _start_time `ui `ux &U *U + &U _start_time * -> -> -> 2 `i `ui `ux -> -> # *U &U _start_time `ui `ux &U *U + &U _start_time * -> -> -> 3 `i `ui `ux -> -> # *U &U _start_time `ui `ux &U *U + &U _start_time * -> -> -> 4 `i `ui `ux -> -> # *U &U _start_time `ui `ux &U *U + &U _start_time * -> -> -> 5 `i `ui `ux -> -> # *U &U _start_time `ui `ux &U *U + &U _start_time * -> -> -> 6 `i `ui `ux -> -> # *U &U _start_time `ui `ux &U *U + &U _start_time * -> -> -> 7 `i `ui `ux -> -> # *U &U _start_time `ui `ux ]
-"98
-[; ;main.c: 98:             LATHbits.LATH3 = !(((hour_now > 0) && (hour_now < 6)) || sun);
-[e = . . _LATHbits 0 3 -> -> ! || && > _hour_now -> -> 0 `i `ui < _hour_now -> -> 6 `i `ui != -> _sun `i -> 0 `i `i `uc ]
-"100
-[; ;main.c: 100:             LEDarray_disp_bin(hour_now);
-[e ( _LEDarray_disp_bin (1 _hour_now ]
-"102
-[; ;main.c: 102:             prev_sec = seconds_counter;
-[e = _prev_sec _seconds_counter ]
 "103
-[; ;main.c: 103:             prev_sun = sun;
-[e = _prev_sun _sun ]
+[; ;main.c: 103:             LATDbits.LATD7 = sun;
+[e = . . _LATDbits 0 7 -> _sun `uc ]
 "106
-[; ;main.c: 106:             LCD_setline(1);
-[e ( _LCD_setline (1 -> -> 1 `i `uc ]
-"107
-[; ;main.c: 107:             LCD_sendstring(timebuf);
-[e ( _LCD_sendstring (1 &U _timebuf ]
+[; ;main.c: 106:             LATHbits.LATH3 = !(((time > 0) && (time < 6)) || sun);
+[e = . . _LATHbits 0 3 -> -> ! || && > _time -> -> 0 `i `ui < _time -> -> 6 `i `ui != -> _sun `i -> 0 `i `i `uc ]
 "108
-[; ;main.c: 108:             LCD_setline(2);
-[e ( _LCD_setline (1 -> -> 2 `i `uc ]
-"109
-[; ;main.c: 109:             LCD_sendstring(datebuf);
-[e ( _LCD_sendstring (1 &U _datebuf ]
-"110
-[; ;main.c: 110:             LCD_sendbyte(0b00000010, 0);
-[e ( _LCD_sendbyte (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
+[; ;main.c: 108:             LEDarray_disp_bin(time);
+[e ( _LEDarray_disp_bin (1 _time ]
 "112
-[; ;main.c: 112:         }
+[; ;main.c: 112:             LCD_setline(1);
+[e ( _LCD_setline (1 -> -> 1 `i `uc ]
+"113
+[; ;main.c: 113:             LCD_sendstring(timebuf);
+[e ( _LCD_sendstring (1 &U _timebuf ]
+"115
+[; ;main.c: 115:             LCD_setline(2);
+[e ( _LCD_setline (1 -> -> 2 `i `uc ]
+"116
+[; ;main.c: 116:             LCD_sendstring(datebuf);
+[e ( _LCD_sendstring (1 &U _datebuf ]
+"118
+[; ;main.c: 118:             LCD_sendbyte(0b00000010, 0);
+[e ( _LCD_sendbyte (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
+"121
+[; ;main.c: 121:             prev_sec = seconds_counter;
+[e = _prev_sec _seconds_counter ]
+"122
+[; ;main.c: 122:             prev_sun = sun;
+[e = _prev_sun _sun ]
+"123
+[; ;main.c: 123:         }
 }
 [e :U 2025 ]
-"113
-[; ;main.c: 113:     }
+"124
+[; ;main.c: 124:     }
 }
 [e :U 2022 ]
 [e $U 2023  ]
 [e :U 2024 ]
-"114
-[; ;main.c: 114: }
+"125
+[; ;main.c: 125: }
 [e :UE 2021 ]
 }

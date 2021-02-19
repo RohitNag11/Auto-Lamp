@@ -78,12 +78,13 @@ void main(void) {
     
     char timebuf[40];//define a 40 characters length string to display on LCD
     char datebuf[40];//define a 40 characters length string to display on LCD
+    
     while (1)
     {
         if (seconds_counter != prev_sec) //if seconds_counter changes...
         {
-            //find the current hour in real-time:
-            unsigned int hour_now = time_now(timebuf, datebuf, 
+            //display selected unit of time in real-time on LED array:
+            unsigned int time = time_now(timebuf, datebuf, 
                                              &seconds_counter, &start_time[1], 
                                              &start_time[2], &start_time[3], 
                                              &start_time[4], &start_time[5], 
@@ -102,12 +103,10 @@ void main(void) {
             LATDbits.LATD7 = sun;
             
             //force LE2 (lamp) be turned off between 1am and 5am:
-            LATHbits.LATH3 = !(((hour_now > 0) && (hour_now < 6)) || sun);
+            LATHbits.LATH3 = !(((time > 0) && (time < 6)) || sun);
             
-            LEDarray_disp_bin(hour_now); /*display the current hour in binary 
+            LEDarray_disp_bin(time); /*display the current hour in binary 
                                           *on the LED array */
-            prev_sec = seconds_counter; //copy seconds_counter before it changes
-            prev_sun = sun; //copy sun state before it changes
             
             //Display date and time on the LCD screen:
             LCD_setline(1); //write to first line
@@ -118,6 +117,9 @@ void main(void) {
             
             LCD_sendbyte(0b00000010, 0); /*write data from the start position
                                           * of the LCD every cycle*/
+            
+            prev_sec = seconds_counter; //copy seconds_counter before it changes
+            prev_sun = sun; //copy sun state before it changes
         } 
     }
 }

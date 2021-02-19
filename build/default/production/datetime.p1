@@ -1985,42 +1985,44 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;datetime.c: 10: unsigned int seconds_counter;
 [v _seconds_counter `ui ~T0 @X0 1 e ]
 "22
-[; ;datetime.c: 22: unsigned int time_now(char *timebuf, char *datebuf, unsigned int *seconds, unsigned int *minutes, unsigned int *hours,
+[; ;datetime.c: 22: unsigned int time_now(char *timebuf, char *datebuf,
 [v _time_now `(ui ~T0 @X0 1 ef10`*uc`*uc`*ui`*ui`*ui`*ui`*ui`*ui`*ui`*ui ]
-"26
-[; ;datetime.c: 26: {
+"27
+[; ;datetime.c: 27: {
 {
 [e :U _time_now ]
 "22
-[; ;datetime.c: 22: unsigned int time_now(char *timebuf, char *datebuf, unsigned int *seconds, unsigned int *minutes, unsigned int *hours,
+[; ;datetime.c: 22: unsigned int time_now(char *timebuf, char *datebuf,
 [v _timebuf `*uc ~T0 @X0 1 r1 ]
 [v _datebuf `*uc ~T0 @X0 1 r2 ]
+"23
+[; ;datetime.c: 23:                         unsigned int *seconds, unsigned int *minutes,
 [v _seconds `*ui ~T0 @X0 1 r3 ]
 [v _minutes `*ui ~T0 @X0 1 r4 ]
-[v _hours `*ui ~T0 @X0 1 r5 ]
-"23
-[; ;datetime.c: 23:                       unsigned int *weekdays,unsigned int *days,
-[v _weekdays `*ui ~T0 @X0 1 r6 ]
-[v _days `*ui ~T0 @X0 1 r7 ]
 "24
-[; ;datetime.c: 24:                       unsigned int *months, unsigned int *years,
-[v _months `*ui ~T0 @X0 1 r8 ]
-[v _years `*ui ~T0 @X0 1 r9 ]
+[; ;datetime.c: 24:                         unsigned int *hours, unsigned int *weekdays,
+[v _hours `*ui ~T0 @X0 1 r5 ]
+[v _weekdays `*ui ~T0 @X0 1 r6 ]
 "25
-[; ;datetime.c: 25:                       unsigned int *season)
-[v _season `*ui ~T0 @X0 1 r10 ]
+[; ;datetime.c: 25:                         unsigned int *days, unsigned int *months,
+[v _days `*ui ~T0 @X0 1 r7 ]
+[v _months `*ui ~T0 @X0 1 r8 ]
 "26
-[; ;datetime.c: 26: {
+[; ;datetime.c: 26:                         unsigned int *years, unsigned int *season)
+[v _years `*ui ~T0 @X0 1 r9 ]
+[v _season `*ui ~T0 @X0 1 r10 ]
+"27
+[; ;datetime.c: 27: {
 [f ]
-"28
-[; ;datetime.c: 28:     _Bool leap = !(*years % 4);
+"29
+[; ;datetime.c: 29:     _Bool leap = !(*years % 4);
 [v _leap `a ~T0 @X0 1 a ]
 [e = _leap -> -> ! != % *U _years -> -> 4 `i `ui -> -> 0 `i `ui `i `a ]
 [v F14541 `ui ~T0 @X0 -> 12 `i s ]
 [i F14541
 :U ..
-"31
-[; ;datetime.c: 31:     unsigned int month_days[] = {31, 28 + leap, 31, 30, 31, 30,
+"32
+[; ;datetime.c: 32:     unsigned int month_days[] = {31, 28 + leap, 31, 30, 31, 30,
 -> -> 0 `i `ui
 -> -> 0 `i `ui
 -> -> 0 `i `ui
@@ -2038,85 +2040,85 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _month_days `ui ~T0 @X0 -> 12 `i a ]
 [e = _month_days F14541 ]
 [e ; = *U + &U _month_days * -> -> -> 0 `i `ui `ux -> -> # *U &U _month_days `ui `ux -> -> 31 `i `ui ; = *U + &U _month_days * -> -> -> 1 `i `ui `ux -> -> # *U &U _month_days `ui `ux -> + -> 28 `i -> _leap `i `ui ; = *U + &U _month_days * -> -> -> 2 `i `ui `ux -> -> # *U &U _month_days `ui `ux -> -> 31 `i `ui ; = *U + &U _month_days * -> -> -> 3 `i `ui `ux -> -> # *U &U _month_days `ui `ux -> -> 30 `i `ui ; = *U + &U _month_days * -> -> -> 4 `i `ui `ux -> -> # *U &U _month_days `ui `ux -> -> 31 `i `ui ; = *U + &U _month_days * -> -> -> 5 `i `ui `ux -> -> # *U &U _month_days `ui `ux -> -> 30 `i `ui ; = *U + &U _month_days * -> -> -> 6 `i `ui `ux -> -> # *U &U _month_days `ui `ux -> -> 31 `i `ui ; = *U + &U _month_days * -> -> -> 7 `i `ui `ux -> -> # *U &U _month_days `ui `ux -> -> 31 `i `ui ; = *U + &U _month_days * -> -> -> 8 `i `ui `ux -> -> # *U &U _month_days `ui `ux -> -> 30 `i `ui ; = *U + &U _month_days * -> -> -> 9 `i `ui `ux -> -> # *U &U _month_days `ui `ux -> -> 31 `i `ui ; = *U + &U _month_days * -> -> -> 10 `i `ui `ux -> -> # *U &U _month_days `ui `ux -> -> 30 `i `ui = *U + &U _month_days * -> -> -> 11 `i `ui `ux -> -> # *U &U _month_days `ui `ux -> -> 31 `i `ui ]
-"34
-[; ;datetime.c: 34:     unsigned int cur_month = month_days[*months];
+"35
+[; ;datetime.c: 35:     unsigned int cur_month = month_days[*months];
 [v _cur_month `ui ~T0 @X0 1 a ]
 [e = _cur_month *U + &U _month_days * -> *U _months `ux -> -> # *U &U _month_days `ui `ux ]
-"38
-[; ;datetime.c: 38:     if ((*months == 2) && (*days > 23) && (*weekdays == 6) && (*hours == 1))
-[e $ ! && && && == *U _months -> -> 2 `i `ui > *U _days -> -> 23 `i `ui == *U _weekdays -> -> 6 `i `ui == *U _hours -> -> 1 `i `ui 2022  ]
 "39
-[; ;datetime.c: 39:     {
-{
+[; ;datetime.c: 39:     if ((*months == 2) && (*days > 23) && (*weekdays == 6) && (*hours == 1))
+[e $ ! && && && == *U _months -> -> 2 `i `ui > *U _days -> -> 23 `i `ui == *U _weekdays -> -> 6 `i `ui == *U _hours -> -> 1 `i `ui 2022  ]
 "40
-[; ;datetime.c: 40:         *season = 1;
-[e = *U _season -> -> 1 `i `ui ]
+[; ;datetime.c: 40:     {
+{
 "41
-[; ;datetime.c: 41:         *hours += 1;
-[e =+ *U _hours -> -> 1 `i `ui ]
+[; ;datetime.c: 41:         *season = 1;
+[e = *U _season -> -> 1 `i `ui ]
 "42
-[; ;datetime.c: 42:     }
+[; ;datetime.c: 42:         *hours += 1;
+[e =+ *U _hours -> -> 1 `i `ui ]
+"43
+[; ;datetime.c: 43:     }
 }
 [e :U 2022 ]
-"45
-[; ;datetime.c: 45:     if ((*months == 9) && (*days > 23) && (*weekdays == 6) && (*hours == 2)
+"46
+[; ;datetime.c: 46:     if ((*months == 9) && (*days > 23) && (*weekdays == 6) && (*hours == 2)
 [e $ ! && && && && == *U _months -> -> 9 `i `ui > *U _days -> -> 23 `i `ui == *U _weekdays -> -> 6 `i `ui == *U _hours -> -> 2 `i `ui == *U _season -> -> 1 `i `ui 2023  ]
-"47
-[; ;datetime.c: 47:     {
-{
 "48
-[; ;datetime.c: 48:         *season = 0;
-[e = *U _season -> -> 0 `i `ui ]
+[; ;datetime.c: 48:     {
+{
 "49
-[; ;datetime.c: 49:         *hours -= 1;
-[e =- *U _hours -> -> 1 `i `ui ]
+[; ;datetime.c: 49:         *season = 0;
+[e = *U _season -> -> 0 `i `ui ]
 "50
-[; ;datetime.c: 50:     }
+[; ;datetime.c: 50:         *hours -= 1;
+[e =- *U _hours -> -> 1 `i `ui ]
+"51
+[; ;datetime.c: 51:     }
 }
 [e :U 2023 ]
-"52
-[; ;datetime.c: 52:     *minutes += *seconds / 60;
-[e =+ *U _minutes / *U _seconds -> -> 60 `i `ui ]
 "53
-[; ;datetime.c: 53:     *seconds %= 60;
-[e =% *U _seconds -> -> 60 `i `ui ]
+[; ;datetime.c: 53:     *minutes += *seconds / 60;
+[e =+ *U _minutes / *U _seconds -> -> 60 `i `ui ]
 "54
-[; ;datetime.c: 54:     *hours += *minutes / 60;
-[e =+ *U _hours / *U _minutes -> -> 60 `i `ui ]
+[; ;datetime.c: 54:     *seconds %= 60;
+[e =% *U _seconds -> -> 60 `i `ui ]
 "55
-[; ;datetime.c: 55:     *minutes %= 60;
-[e =% *U _minutes -> -> 60 `i `ui ]
+[; ;datetime.c: 55:     *hours += *minutes / 60;
+[e =+ *U _hours / *U _minutes -> -> 60 `i `ui ]
 "56
-[; ;datetime.c: 56:     *days += *hours / 24;
-[e =+ *U _days / *U _hours -> -> 24 `i `ui ]
+[; ;datetime.c: 56:     *minutes %= 60;
+[e =% *U _minutes -> -> 60 `i `ui ]
 "57
-[; ;datetime.c: 57:     *weekdays += *hours / 24;
-[e =+ *U _weekdays / *U _hours -> -> 24 `i `ui ]
+[; ;datetime.c: 57:     *days += *hours / 24;
+[e =+ *U _days / *U _hours -> -> 24 `i `ui ]
 "58
-[; ;datetime.c: 58:     *hours %= 24;
-[e =% *U _hours -> -> 24 `i `ui ]
+[; ;datetime.c: 58:     *weekdays += *hours / 24;
+[e =+ *U _weekdays / *U _hours -> -> 24 `i `ui ]
 "59
-[; ;datetime.c: 59:     *months += *days / cur_month;
+[; ;datetime.c: 59:     *hours %= 24;
+[e =% *U _hours -> -> 24 `i `ui ]
+"60
+[; ;datetime.c: 60:     *months += *days / cur_month;
 [e =+ *U _months / *U _days _cur_month ]
-"61
-[; ;datetime.c: 61:     *days %= cur_month;
-[e =% *U _days _cur_month ]
 "62
-[; ;datetime.c: 62:     *weekdays %= 7;
-[e =% *U _weekdays -> -> 7 `i `ui ]
+[; ;datetime.c: 62:     *days %= cur_month;
+[e =% *U _days _cur_month ]
 "63
-[; ;datetime.c: 63:     *years += *months / 12;
-[e =+ *U _years / *U _months -> -> 12 `i `ui ]
+[; ;datetime.c: 63:     *weekdays %= 7;
+[e =% *U _weekdays -> -> 7 `i `ui ]
 "64
-[; ;datetime.c: 64:     *months %= 12;
+[; ;datetime.c: 64:     *years += *months / 12;
+[e =+ *U _years / *U _months -> -> 12 `i `ui ]
+"65
+[; ;datetime.c: 65:     *months %= 12;
 [e =% *U _months -> -> 12 `i `ui ]
 [v F14545 `uc ~T0 @X0 -> 10 `i t ]
 [v F14544 `F14545 ~T0 @X0 -> 7 `i s ]
 [i F14544
 :U ..
 :U ..
-"67
-[; ;datetime.c: 67:     char daylist[7][10] = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
+"68
+[; ;datetime.c: 68:     char daylist[7][10] = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
 -> 77 `c
 -> 111 `c
 -> 110 `c
@@ -2163,18 +2165,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v F14547 `uc ~T0 @X0 -> 10 `i t ]
 [v _daylist `F14547 ~T0 @X0 -> 7 `i a ]
 [e = _daylist F14544 ]
-"70
-[; ;datetime.c: 70:     sprintf(timebuf, "    %02d:%02d:%02d", *hours, *minutes, *seconds);
+"71
+[; ;datetime.c: 71:     sprintf(timebuf, "    %02d:%02d:%02d", *hours, *minutes, *seconds);
 [e ( _sprintf (1 , , , (. , _timebuf :s 1C *U _hours *U _minutes *U _seconds ]
-"73
-[; ;datetime.c: 73:     sprintf(datebuf, " %s %02d/%02d/%04d", daylist[*weekdays], *days + 1, *months + 1, *years);
+"74
+[; ;datetime.c: 74:     sprintf(datebuf, " %s %02d/%02d/%04d", daylist[*weekdays], *days + 1, *months + 1, *years);
 [e ( _sprintf (1 , , , , (. , _datebuf :s 2C &U *U + &U _daylist * -> *U _weekdays `ux -> * -> # *U &U *U &U _daylist `ui -> -> 10 `i `ui `ux + *U _days -> -> 1 `i `ui + *U _months -> -> 1 `i `ui *U _years ]
-"79
-[; ;datetime.c: 79:     return (*hours);
-[e ) *U _hours ]
+"78
+[; ;datetime.c: 78:     return (*seconds);
+[e ) *U _seconds ]
 [e $UE 2021  ]
-"83
-[; ;datetime.c: 83: }
+"84
+[; ;datetime.c: 84: }
 [e :UE 2021 ]
 }
 [p f _sprintf 8683652 ]

@@ -22,19 +22,19 @@
  * NORMAL MODE:
  * effect: seconds are incremented in real time
  */ 
-//#define prescaler (0b1000) //1:256
-//#define start_high (0b00001011) 
-//#define start_low (0b11011100)
-//#define secs_increment (1) 
+#define prescaler (0b1000) //1:256
+#define start_high (0b00001011) 
+#define start_low (0b11011100)
+#define secs_increment (1) 
 
 /***********************************************************
  * TEST MODE 1:
  * effect: hours are incremented every 0.9999 seconds
  */ 
-#define prescaler (0b0000) //1:1
-#define start_high (0b11101110)
-#define start_low (0b10100100)
-#define secs_increment (1)
+//#define prescaler (0b0000) //1:1
+//#define start_high (0b11101110)
+//#define start_low (0b10100100)
+//#define secs_increment (1)
 
 /***********************************************************
  * TEST MODE 2:

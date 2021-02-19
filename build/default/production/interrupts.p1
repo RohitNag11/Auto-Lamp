@@ -2188,11 +2188,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;interrupts.c: 56:         seconds_counter += (1);
 [e =+ _seconds_counter -> -> 1 `i `ui ]
 "58
-[; ;interrupts.c: 58:         TMR0H = (0b11101110);
-[e = _TMR0H -> -> 238 `i `uc ]
+[; ;interrupts.c: 58:         TMR0H = (0b00001011);
+[e = _TMR0H -> -> 11 `i `uc ]
 "59
-[; ;interrupts.c: 59:         TMR0L = (0b10100100);
-[e = _TMR0L -> -> 164 `i `uc ]
+[; ;interrupts.c: 59:         TMR0L = (0b11011100);
+[e = _TMR0L -> -> 220 `i `uc ]
 "60
 [; ;interrupts.c: 60:         if (sun){
 [e $ ! != -> _sun `i -> 0 `i 2027  ]

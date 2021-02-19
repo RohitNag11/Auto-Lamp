@@ -24395,10 +24395,11 @@ extern unsigned int (seconds_counter);
 
 
 
-unsigned int time_now(char *timebuf, char *datebuf, unsigned int *seconds, unsigned int *minutes, unsigned int *hours,
-                      unsigned int *weekdays,unsigned int *days,
-                      unsigned int *months, unsigned int *years,
-                      unsigned int *season);
+unsigned int time_now(char *timebuf, char *datebuf,
+                        unsigned int *seconds, unsigned int *minutes,
+                        unsigned int *hours, unsigned int *weekdays,
+                        unsigned int *days, unsigned int *months,
+                        unsigned int *years, unsigned int *season);
 # 19 "main.c" 2
 
 # 1 "./RunMode.h" 1
@@ -24436,6 +24437,8 @@ void main(void) {
     ANSELFbits.ANSELF7=1;
 
 
+    TRISDbits.TRISD7 = 0;
+    LATDbits.LATD7 = 1;
 
 
     TRISHbits.TRISH3 = 0;
@@ -24447,52 +24450,61 @@ void main(void) {
 
 
 
-    sun = 1;
-# 68 "main.c"
+    sun = 0;
+
+    _Bool prev_sun = sun;
+# 72 "main.c"
     unsigned int start_time[] = {0, 0, 0, 0, 0, 0, 2021, 0};
 
     seconds_counter = start_time[0];
 
-
     unsigned int prev_sec = 0;
 
-    _Bool prev_sun = sun;
 
     char timebuf[40];
     char datebuf[40];
+
     while (1)
     {
         if (seconds_counter != prev_sec)
         {
+
+            unsigned int time = time_now(timebuf, datebuf,
+                                             &seconds_counter, &start_time[1],
+                                             &start_time[2], &start_time[3],
+                                             &start_time[4], &start_time[5],
+                                             &start_time[6], &start_time[7]);
+
 
             if ((sun != prev_sun) && (!sun))
             {
                 start_time[1] = 0;
                 start_time[2] = 12;
                 seconds_counter = seconds_check/2;
+
             }
 
 
-            unsigned int hour_now = time_now(timebuf, datebuf, &seconds_counter, &start_time[1], &start_time[2],
-                                       &start_time[3], &start_time[4],
-                                       &start_time[5], &start_time[6],
-                                       &start_time[7]);
+            LATDbits.LATD7 = sun;
 
 
-            LATHbits.LATH3 = !(((hour_now > 0) && (hour_now < 6)) || sun);
+            LATHbits.LATH3 = !(((time > 0) && (time < 6)) || sun);
 
-            LEDarray_disp_bin(hour_now);
+            LEDarray_disp_bin(time);
 
-            prev_sec = seconds_counter;
-            prev_sun = sun;
 
 
             LCD_setline(1);
             LCD_sendstring(timebuf);
+
             LCD_setline(2);
             LCD_sendstring(datebuf);
+
             LCD_sendbyte(0b00000010, 0);
 
+
+            prev_sec = seconds_counter;
+            prev_sun = sun;
         }
     }
 }

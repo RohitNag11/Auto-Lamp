@@ -24201,12 +24201,12 @@ void Timer0_init(void)
     T0CON1bits.T0CS=0b010;
     T0CON1bits.T0ASYNC=1;
 
-    T0CON1bits.T0CKPS = (0b0000);
+    T0CON1bits.T0CKPS = (0b1000);
     T0CON0bits.T016BIT=1;
 
 
-    TMR0H = (0b11101110);
-    TMR0L = (0b10100100);
+    TMR0H = (0b00001011);
+    TMR0L = (0b11011100);
 
     T0CON0bits.T0EN=1;
 }
