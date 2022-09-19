@@ -1,5 +1,44 @@
 build/
 dist/
-nbproject/Makefile-*
-nbproject/Package-*
-nbproject/private/
+production/
+nbproject/
+
+# object files
+.o
+o.obj
+
+# libraries
+
+# DLLs, shared objects
+.lib
+.so
+.dll
+
+# Executables
+.exe
+a.out
+
+# swap files, temp files, etc
+.swp
+.~
+thumbs.db
+
+.cproject
+.dep/
+.project
+.settings/
+
+#files being edited
+*~
+
+# make and build files
+*.lst
+*.o
+*.eep
+*.lss
+*.map
+*.sym
+
+# I keep these, since I prefer having the reference of the final build
+# *.elf
+# *.hex
